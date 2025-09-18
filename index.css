@@ -48,7 +48,7 @@ body {
 }
 
 h1 {
-  font-size: 12vw;
+  font-size: 9.1vw; /* Reduced from 13vw */
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -57,7 +57,7 @@ h1 {
 }
 
 .date {
-  font-size: 5vw;
+  font-size: 3.8vw; /* Reduced from 5.5vw */
   font-weight: 400;
   margin-bottom: 40px;
   letter-spacing: 0.05em;
@@ -68,8 +68,16 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 8vw;
+  font-size: 9vw;
   font-weight: 700;
+}
+
+.rate-info {
+  font-size: 4vw;
+  font-weight: 400;
+  margin-top: 30px;
+  letter-spacing: 0.05em;
+  text-shadow: 0 0 4px var(--shadow-color), 0 0 8px rgba(0,0,0,0.7);
 }
 
 .timer-segment {
@@ -77,19 +85,19 @@ h1 {
   flex-direction: column;
   align-items: center;
   padding: 0 15px;
-  min-width: 12vw;
+  min-width: 13vw;
 }
 
 .timer-segment .label {
-  font-size: 2.5vw;
+  font-size: 3vw;
   text-transform: uppercase;
   font-weight: 400;
   margin-top: 5px;
 }
 
 .separator {
-  font-size: 8vw;
-  padding-bottom: 4vw; /* Align with number labels */
+  font-size: 9vw;
+  padding-bottom: 4.5vw; /* Align with number labels */
   animation: blink 1.5s infinite;
 }
 
@@ -102,23 +110,27 @@ h1 {
 /* Responsive adjustments for larger screens */
 @media (min-width: 768px) {
   h1 {
-    font-size: 90px;
+    font-size: 67px; /* Reduced from 96px */
   }
   .date {
-    font-size: 36px;
+    font-size: 28px; /* Reduced from 40px */
+  }
+  .rate-info {
+    font-size: 28px;
+    margin-top: 40px;
   }
   .timer {
-    font-size: 72px;
+    font-size: 80px;
   }
    .timer-segment {
     padding: 0 20px;
-    min-width: 90px;
+    min-width: 100px;
    }
    .timer-segment .label {
-    font-size: 18px;
+    font-size: 20px;
   }
   .separator {
-    font-size: 72px;
-    padding-bottom: 30px;
+    font-size: 80px;
+    padding-bottom: 34px;
   }
 }
