@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Judgement Day</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="overlay"></div>
+  <main class="container" aria-live="polite">
+    <h1>JUDGEMENT DAY</h1>
+    <p class="date" aria-label="Date: October 2nd, 2025">02.10.25</p>
+    <div class="timer" role="timer" aria-atomic="true">
+      <div class="timer-segment">
+        <span id="hours">00</span>
+        <span class="label">Hours</span>
+      </div>
+      <span class="separator" aria-hidden="true">:</span>
+      <div class="timer-segment">
+        <span id="minutes">00</span>
+        <span class="label">Minutes</span>
+      </div>
+      <span class="separator" aria-hidden="true">:</span>
+      <div class="timer-segment">
+        <span id="seconds">00</span>
+        <span class="label">Seconds</span>
+      </div>
+    </div>
+  </main>
+  <script type="module" src="index.tsx"></script>
+</body>
+</html>
